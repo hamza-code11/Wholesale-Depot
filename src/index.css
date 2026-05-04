@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #ce1220;
+  --color-brand-red-light: #e81d2c;
+  --color-brand-red-dark: #a80e1a;
+  --color-brand-blue: #043787;
+  --color-brand-blue-light: #0548b0;
+  --color-brand-blue-dark: #032666;
+  --color-bg: #f7f7f7;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-light: #9ca3af;
+  --color-green: #16a34a;
+  --color-yellow: #eab308;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* overflow-x: hidden ko hata diya yahan se */
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #1f2937;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /* Horizontal scroll rokne ka behtar tarika body par hai */
+  overflow-x: hidden; 
+}
+
+/* YAHAN FIX HAI: In containers se overflow-hidden hata dein */
+.max-w-7xl, .max-w-6xl, .max-w-5xl {
+  overflow: visible !important; 
+}
+
+/* Scrollbar hide karne ke liye */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
