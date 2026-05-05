@@ -15,8 +15,8 @@ export default function App() {
     <div className="">
       <Navbar />
       <HeroSlider />
-      <Categories />
       <BrandCarousel />
+      <Categories />
       <DealsOfDay />
       <PromoBanner />
       <FeatureProduct />
