@@ -9,11 +9,9 @@ const categories = [
 ];
 
 const allBrands = [
-  'Dalda', 'Nestle', 'National', 'Shan', 'Olpers', 'Tapal',
-  'Engro', 'Unilever', 'Lipton', 'Knorr', 'Rafhan', 'Mehran',
-  'Shezan', 'Mitchell\'s', 'Young\'s', 'Dawn', 'Colgate', 'Lifebuoy',
-  'Sufi', 'Shangrila',
-];
+  'STARBUCKS', 'GHIRARDELLI', 'ZESTY PAWS', 'LANCE', 'NUTELLA', 'PURINA',
+  'ALANI', 'BELVITA'
+]; 
 
 export default function BottomBar() {
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
@@ -94,7 +92,7 @@ export default function BottomBar() {
               type="button"
             >
               <Grid3X3 size={16} />
-              <span>Browse Categories</span>
+              <span>Categories</span>
               <ChevronDown 
                 size={14} 
                 className={`transition-transform duration-200 ${isCategoryOpen ? 'rotate-180' : ''}`} 

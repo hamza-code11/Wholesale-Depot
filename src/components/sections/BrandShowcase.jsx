@@ -7,7 +7,7 @@ const bannerData = [
     tag: 'Limited Offer',
     title: 'Tasty Snacks & Fast Food',
     subtitle: 'The Flavor Of Something Special',
-    image: 'https://nest-frontend-v6.netlify.app/assets/imgs/banner/banner-1.png',
+    image: 'https://m.media-amazon.com/images/I/81lIeZiD8kL._SY450_.jpg',
     overlay: 'from-black/50 via-black/30 to-black/10',
     badgeBg: 'bg-brand-red',
     link: '/category/snacks'
@@ -18,7 +18,7 @@ const bannerData = [
     tag: 'Fresh Deal',
     title: 'Fresh Fruits & Veggies',
     subtitle: 'A Healthy Meal For Everyone',
-    image: 'https://nest-frontend-v6.netlify.app/assets/imgs/banner/banner-2.png',
+    image: 'https://m.media-amazon.com/images/I/81BPO+lOofL._SY450_.jpg',
     overlay: 'from-black/50 via-black/30 to-black/10',
     badgeBg: 'bg-brand-blue',
     link: '/category/fruits'
@@ -59,22 +59,22 @@ export default function DoubleBanner() {
                   </div> */}
 
                   {/* Tag */}
-                  <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-bold text-white bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20">
+                  {/* <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-bold text-white bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20">
                     <Tag size={10} />
                     {banner.tag}
-                  </span>
+                  </span> */}
                 </div>
 
                 {/* Bottom Content */}
                 <div className="max-w-[220px] sm:max-w-[250px] md:max-w-[280px]">
                   {/* Title */}
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white mb-2 sm:mb-3 leading-tight drop-shadow-lg">
-                    {banner.title}
+                    {/* {banner.title} */}
                   </h3>
                   
                   {/* Subtitle */}
                   <p className="text-sm sm:text-base text-white/80 mb-4 sm:mb-6 leading-relaxed font-medium">
-                    {banner.subtitle}
+                    {/* {banner.subtitle} */}
                   </p>
                   
                   {/* CTA Button */}
