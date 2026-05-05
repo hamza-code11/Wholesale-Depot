@@ -21,7 +21,7 @@ export default function App() {
       <PromoBanner />
       <FeatureProduct />
       <BrandShowcase />
-      <Features />
+      {/* <Features /> */}
       <Newsletter />
       <Footer />
     </div>
