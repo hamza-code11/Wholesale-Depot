@@ -20,8 +20,8 @@ export default function App() {
       <DealsOfDay />
       <PromoBanner />
       <FeatureProduct />
-      <BrandShowcase />
-      {/* <Features /> */}
+      {/* <BrandShowcase /> */}
+      <Features />
       <Newsletter />
       <Footer />
     </div>
