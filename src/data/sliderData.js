@@ -9,23 +9,23 @@ export const sliderData = [
   {
     id: 1,
     image: img1,
-    alt: 'Fresh Groceries',
+    alt: 'Shop Now',
     link: '/shop',
     cta: 'Shop Now'
   },
   {
     id: 2,
     image: img2,
-    alt: 'Dairy Products',
-    link: '/category/dairy-eggs',
-    cta: 'Explore Dairy'
+    alt: 'Shop Now',
+    link: '/shop',
+    cta: 'Shop Now'
   },
   {
     id: 3,
     image: img3,
-    alt: 'Beverages Collection',
-    link: '/category/beverages',
-    cta: 'View Beverages'
+    alt: 'Shop Now',
+    link: '/shop',
+    cta: 'Shop Now'
   },
 ];
 
