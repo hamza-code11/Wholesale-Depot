@@ -1,7 +1,7 @@
 
-import img1 from "../assets/slider/01.jpg";
-import img2 from "../assets/slider/02.jpg";
-import img3 from "../assets/slider/03.jpg";
+import img1 from "../assets/slider/04.png";
+import img2 from "../assets/slider/05.png";
+import img3 from "../assets/slider/06.png";
 
 
 
