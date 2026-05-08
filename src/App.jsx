@@ -1,33 +1,52 @@
-import Navbar from './components/layout/Navbar';
-import HeroSlider from './components/hero/HeroSlider';
-import DeliveryBanner from './components/sections/DeliveryBanner';
-import Categories from './components/sections/Categories';
-import BrandCarousel from './components/sections/BrandCarousel';
-import PromoBanner from './components/sections/PromoBanner';
-import FeatureProduct from './components/sections/FeatureProduct';
-import DealsOfDay from './components/sections/DealsOfDay';
-import BrandShowcase from './components/sections/BrandShowcase';
-import Features from './components/sections/Features';
-import WhyShopWithUs from './components/sections/WhyShopWithUs';
-import Newsletter from './components/sections/Newsletter';
-import Footer from './components/sections/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Navbar from './components/web_layout/Navbar';
+import Footer from './components/web_layout/Footer';
+
+
+import Login from './pages/auth/Login';
+import Signup from './pages/auth/Signup';
+
+
+import Home from './pages/web/Home';
+import Shop from './pages/web/Shop';
+import ProductDetailPage from './pages/web/ProductDetailPage';
+
+
+
+
+import Contact from './pages/web/Contact';
+import Wishlist from './pages/web/Wishlist';
+import Cart from './pages/web/cart';
+
+
 
 export default function App() {
   return (
-    <div className="">
-      <Navbar />
-      <HeroSlider />
-      <DeliveryBanner/>
-      <BrandCarousel />
-      <Categories />
-      <DealsOfDay />
-      <PromoBanner />
-      <FeatureProduct />
-      {/* <BrandShowcase /> */}
-      {/* <Features /> */}
-      <WhyShopWithUs />
-      <Newsletter />
-      <Footer />
-    </div>
+    <Router>
+      <div className="">
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/product/:id" element={<ProductDetailPage />} />
+
+          <Route path="/contact" element={<Contact />} />
+
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/cart" element={<Cart />} />
+
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
+
+

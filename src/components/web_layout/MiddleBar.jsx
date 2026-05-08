@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Heart, ShoppingCart, Menu } from 'lucide-react';
 import logo from "../../assets/logo/logo.png";
 import SearchBar from './SearchBar';
@@ -36,7 +37,8 @@ export default function MiddleBar({ onMobileMenuToggle }) {
           <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
             
             {/* Wishlist */}
-            <button 
+            <Link 
+              to="/wishlist"
               className="relative p-2.5 text-gray-600 hover:text-brand-blue transition-colors rounded-lg hover:bg-blue-50/60 group"
               aria-label="Wishlist"
             >
@@ -44,10 +46,11 @@ export default function MiddleBar({ onMobileMenuToggle }) {
               <span className="absolute -top-0.5 -right-0.5 min-w-[15px] h-[15px] bg-brand-blue text-white text-[9px] font-bold rounded-full flex items-center justify-center ring-2 ring-white group-hover:scale-110 transition-transform leading-none">
                 3
               </span>
-            </button>
+            </Link>
 
             {/* Cart */}
-            <button 
+            <Link 
+              to="/cart"
               className="relative flex items-center p-2.5 text-gray-600 hover:text-brand-blue transition-colors rounded-lg hover:bg-blue-50/60 group"
               aria-label="Cart"
             >
@@ -57,7 +60,7 @@ export default function MiddleBar({ onMobileMenuToggle }) {
                   5
                 </span>
               </div>
-            </button>
+            </Link>
 
           </div>
 

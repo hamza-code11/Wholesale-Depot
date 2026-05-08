@@ -1,13 +1,13 @@
 import { Sparkles, ArrowRight } from 'lucide-react';
-import img1 from '../../assets/brands/01.png';
-import img2 from '../../assets/brands/02.png';
-import img3 from '../../assets/brands/03.png';
-import img4 from '../../assets/brands/04.png';
-import img5 from '../../assets/brands/05.png';
-import img6 from '../../assets/brands/06.png';
-import img7 from '../../assets/brands/07.webp';
-import img8 from '../../assets/brands/08.webp';
-import img9 from '../../assets/brands/09.png';
+import img1 from '../assets/brands/01.png';
+import img2 from '../assets/brands/02.png';
+import img3 from '../assets/brands/03.png';
+import img4 from '../assets/brands/04.png';
+import img5 from '../assets/brands/05.png';
+import img6 from '../assets/brands/06.png';
+import img7 from '../assets/brands/07.webp';
+import img8 from '../assets/brands/08.webp';
+import img9 from '../assets/brands/09.png';
 
 export default function BrandCarousel() {
   const brandsData = [

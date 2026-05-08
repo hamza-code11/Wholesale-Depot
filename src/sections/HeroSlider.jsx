@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
-import { sliderData } from '../../data/sliderData';
+import { sliderData } from '../data/sliderData';
 
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0);

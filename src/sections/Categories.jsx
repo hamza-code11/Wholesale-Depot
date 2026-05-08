@@ -1,5 +1,5 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
-import { categoriesData } from '../../data/categoriesData';
+import { categoriesData } from '../data/categoriesData';
 
 export default function Categories() {
   const allCategories = [...categoriesData, ...categoriesData, ...categoriesData];

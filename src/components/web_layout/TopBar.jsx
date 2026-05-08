@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, User, Truck } from 'lucide-react';
 
 export default function TopBar() {
@@ -51,7 +52,7 @@ export default function TopBar() {
             <span className="w-px h-4 bg-white/20 hidden sm:block"></span>
 
             <a 
-              href="#" 
+              href="/login" 
               className="flex items-center gap-1.5 px-2 py-1 hover:bg-white/10 rounded-md transition-colors font-medium"
             >
               <User size={13} />

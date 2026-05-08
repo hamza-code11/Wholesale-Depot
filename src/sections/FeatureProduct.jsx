@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import ProductGrid from '../product/ProductGrid';
-import { productsData } from '../../data/productsData';
-import QuickViewModal from '../../components/product/QuickViewModal';
+import ProductGrid from './../components/product/ProductGrid';
+import { productsData } from '../data/productsData';
+import QuickViewModal from '../components/product/QuickViewModal';
 
 export default function ShopPage() {
   const [selectedProduct, setSelectedProduct] = useState(null);

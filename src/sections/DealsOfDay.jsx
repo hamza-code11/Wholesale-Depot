@@ -1,6 +1,6 @@
 import { ArrowRight, Sparkles, Leaf } from 'lucide-react';
-import ProductCard from '../product/ProductCard';
-import { productsData } from '../../data/productsData';
+import ProductCard from '../components/product/ProductCard';
+import { productsData } from '../data/productsData';
 
 export default function DailyBestSells() {
   const displayProducts = productsData.slice(0, 4);
